@@ -1,4 +1,3 @@
-import { signInWithGoogle } from "../../firebase/firebase.utils"
 import {addItemToCart} from './cart.utils';
 
 import CartActionTypes from './cart.types';
