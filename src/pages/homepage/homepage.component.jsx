@@ -1,13 +1,12 @@
-import React from "react";
+import React from 'react';
 
 import Directory from '../../components/directory/directory.component';
 
-import {HomePageContainer} from './homepage.styles'; 
+import { HomePageContainer } from './homepage.styles';
 
-//Functional Component
-const HomePage = ({ history }) => (
+const HomePage = () => (
   <HomePageContainer>
-    <Directory history={history} />
+    <Directory />
   </HomePageContainer>
 );
 

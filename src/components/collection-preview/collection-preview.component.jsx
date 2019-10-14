@@ -1,12 +1,13 @@
-import React from "react";
+import React from 'react';
+import { withRouter } from 'react-router-dom';
 
-import CollectionItem from "../collection-item/collection-item.component";
+import CollectionItem from '../collection-item/collection-item.component';
 
 import {
   CollectionPreviewContainer,
   TitleContainer,
   PreviewContainer
-} from "./collection-preview.styles";
+} from './collection-preview.styles';
 
 const CollectionPreview = ({ title, items, history, match, routeName }) => (
   <CollectionPreviewContainer>
@@ -15,7 +16,7 @@ const CollectionPreview = ({ title, items, history, match, routeName }) => (
     </TitleContainer>
     <PreviewContainer>
       {items
-        .filter((item, index) => index < 4)
+        .filter((item, idx) => idx < 4)
         .map(item => (
           <CollectionItem key={item.id} item={item} />
         ))}
@@ -23,4 +24,4 @@ const CollectionPreview = ({ title, items, history, match, routeName }) => (
   </CollectionPreviewContainer>
 );
 
-export default CollectionPreview;
+export default withRouter(CollectionPreview);

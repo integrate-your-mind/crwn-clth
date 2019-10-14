@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const CheckoutItemContainer = styled.div`
   width: 100%;
@@ -27,12 +27,12 @@ export const TextContainer = styled.span`
 export const QuantityContainer = styled(TextContainer)`
   display: flex;
 
-  .arrow {
-    cursor: pointer;
+  span {
+    margin: 0 10px;
   }
 
-  .value {
-    margin: 0 10px;
+  div {
+    cursor: pointer;
   }
 `;
 
