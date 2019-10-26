@@ -42,7 +42,7 @@ const mapDispatchToProps = dispatch => ({
   removeItem: item => dispatch(removeItem(item))
 });
 
-export default connect(
+export default React.memo(connect(
   null,
   mapDispatchToProps
-)(CheckoutItem);
+)(CheckoutItem));
